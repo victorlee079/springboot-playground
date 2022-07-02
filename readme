@@ -1,0 +1,5 @@
+# For starting springboot application
+./mvnw spring-boot:run
+
+# For packaging to ./target
+./mvnw package
