@@ -3,3 +3,20 @@
 
 # For packaging to ./target
 ./mvnw package
+
+# Create docker network
+docker network create demo-network
+
+# Compose
+docker-compose --env-file "/demo/.env" build
+
+# Run
+docker-compose --env-file "/demo/.env" up -d
+
+# Kill all running docker
+docker rm $(docker ps -a -q)
+
+# Remove all stopped container
+docker rm $(docker ps -a -q)
+
+
