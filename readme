@@ -8,10 +8,10 @@
 docker network create demo-network
 
 # Compose
-docker-compose --env-file "/demo/.env" build
+docker-compose --env-file "/Users/vitorl/Java/demo_db/.env" build
 
 # Run
-docker-compose --env-file "/demo/.env" up -d
+docker-compose --env-file "/Users/vitorl/Java/demo_db/.env" up -d
 
 # Kill all running docker
 docker rm $(docker ps -a -q)
